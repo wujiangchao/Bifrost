@@ -81,7 +81,7 @@ func GetSnapshotData() ([]byte, error) {
 	return json.Marshal(data)
 }
 
-//只获取 数据源 和 目标库的镜像数据
+// GetSnapshotData2 只获取 数据源 和 目标库的镜像数据
 func GetSnapshotData2() ([]byte, error) {
 	l.Lock()
 	defer func() {
